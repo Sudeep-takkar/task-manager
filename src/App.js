@@ -1,23 +1,41 @@
 import logo from './logo.svg';
 import './App.css';
+// import DefaultComponentWithNameChanged from './Clock';
+// import { add } from './Clock';
+
+import Tasks  from './components/FunctionalComponentExample'
+import Form from './components/Form';
+
+const taskList = [
+  {
+  task: "Task 1",
+  isComplete: false
+  },
+  {
+    task: "Task 2",
+    isComplete: false
+  },
+  {
+    task: "Task 3",
+    isComplete: false
+  },
+  {
+    task: "Task 4",
+    isComplete: true
+  },
+  {
+    task: "Task 5",
+    isComplete: true
+  }
+]
 
 function App() {
+  // console.log(add)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <DefaultComponentWithNameChanged /> */}
+      <Tasks taskList={taskList} someRandomProp={'1536'} />
+      <Form />
     </div>
   );
 }
