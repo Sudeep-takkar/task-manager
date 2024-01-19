@@ -12,7 +12,9 @@ class StatefulComponent extends Component {
     this.setState({ items: items });
   };
 
-  addItem = (e, input) => {
+    addItem = (e, input) => {
+      console.log('input',input.value)
+    //   console.log('event',e)
     this.setState({
       items: [...this.state.items, { id: input.value, content: input.value }]
     });
