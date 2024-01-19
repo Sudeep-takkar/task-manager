@@ -5,6 +5,7 @@ import './App.css';
 
 import Tasks  from './components/FunctionalComponentExample'
 import Form from './components/Form';
+import StatefulComponent from './components/StatefulComponent';
 
 const taskList = [
   {
@@ -34,8 +35,9 @@ function App() {
   return (
     <div className="App">
       {/* <DefaultComponentWithNameChanged /> */}
-      <Tasks taskList={taskList} someRandomProp={'1536'} />
-      <Form />
+      {/* <Tasks taskList={taskList} someRandomProp={'1536'} /> */}
+      {/* <Form /> */}
+      <StatefulComponent />
     </div>
   );
 }
