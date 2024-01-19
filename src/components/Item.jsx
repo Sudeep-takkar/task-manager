@@ -2,11 +2,10 @@ import React, { Component } from "react";
 class Item extends Component {
 
     render() {
-        let input;
         return (
-            <div key={this.props.id}>
-                <span onClick={() => this.deleteItem(this.props.id)}>
-                  {this.props.content}
+            <div key={this.props.itemDescription.id}>
+                <span onClick={() => this.deleteItem(this.props.itemDescription.id)}>
+                  {this.props.itemDescription.content}
                 </span>
             </div>
         );

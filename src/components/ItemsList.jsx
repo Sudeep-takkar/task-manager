@@ -4,15 +4,14 @@ class ItemsList extends Component {
 
     render() {
         return (
-          <div>
             <div>
-              {this.props.items.map(item => {
+            {this.props.items.map(item => {
+                console.log(item)
                 return (
-                    <Item itemDescription={ item} />
+                    <Item itemDescription={item} />
                 );
               })}
             </div>
-          </div>
         );
       }
 
