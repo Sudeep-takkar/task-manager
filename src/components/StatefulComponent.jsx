@@ -37,7 +37,7 @@ class StatefulComponent extends Component {
               </div>
             );
           })} */}
-                <ItemsList items={ this.state.items} />
+          <ItemsList items={this.state.items} deleteItem={ this.deleteItem} />
         </div>
         <div>
           <input
