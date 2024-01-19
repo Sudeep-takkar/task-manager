@@ -27,7 +27,7 @@ class StatefulComponent extends Component {
       <div>
         <div>
           <h1>Simple Todo List</h1>
-          {this.state.items.map(item => {
+          {/* {this.state.items.map(item => {
             return (
               <div key={item.id}>
                 <span onClick={() => this.deleteItem(item.id)}>
@@ -35,7 +35,8 @@ class StatefulComponent extends Component {
                 </span>
               </div>
             );
-          })}
+          })} */}
+                <ItemsList items={ this.state.items} />
         </div>
         <div>
           <input
