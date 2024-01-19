@@ -1,8 +1,17 @@
-// rendering each item
+import React, { Component } from "react";
+class Item extends Component {
 
-
-{/* <div key={item.id}>
-                <span onClick={() => this.deleteItem(item.id)}>
-                  {item.content}
+    render() {
+        let input;
+        return (
+            <div key={this.props.id}>
+                <span onClick={() => this.deleteItem(this.props.id)}>
+                  {this.props.content}
                 </span>
-              </div> */}
+            </div>
+        );
+      }
+
+}
+
+export default Item;
