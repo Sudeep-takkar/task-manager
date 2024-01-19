@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ItemsList from './ItemsList'
 
 class StatefulComponent extends Component {
   state = {
