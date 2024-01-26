@@ -3,7 +3,7 @@ import ItemsList from './ItemsList'
 
 class StatefulComponent extends Component {
   state = {
-    items: []
+    items: [{ id: "testid", content: 'test task' }]
   };
 
   deleteItem = id => {
